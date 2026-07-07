@@ -427,6 +427,7 @@ body{
 }
 
 #OurImpactPageSection2PictureSliderContainer{
+    position: relative;
     border-radius: 25px;
     width: 60%;
     aspect-ratio: 10/6;
@@ -444,9 +445,9 @@ body{
 }
 
 #OurImpactPageSection2PictureSliderLeftButton{
-    position: relative;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
-    top: -50%;
     left: 2.5%;
     width: 5%;
     aspect-ratio: 1/1;
@@ -465,9 +466,9 @@ body{
 }
 
 #OurImpactPageSection2PictureSliderRightButton{
-    position: relative;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
-    top: -50%;
     left: 85%;
     width: 5%;
     aspect-ratio: 1/1;
@@ -525,6 +526,7 @@ body{
 }
 
 #OurImpactPageSection3PictureSliderContainer{
+    position: relative;
     border-radius: 25px;
     width: 60%;
     aspect-ratio: 10/6;
@@ -542,9 +544,9 @@ body{
 }
 
 #OurImpactPageSection3PictureSliderLeftButton{
-    position: relative;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
-    top: -50%;
     left: 2.5%;
     width: 5%;
     aspect-ratio: 1/1;
@@ -563,9 +565,9 @@ body{
 }
 
 #OurImpactPageSection3PictureSliderRightButton{
-    position: relative;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
-    top: -50%;
     left: 85%;
     width: 5%;
     aspect-ratio: 1/1;
@@ -593,8 +595,8 @@ body{
 }
 
 #OurImpactPageSection4TextBox{
-    position: relative;
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
@@ -621,6 +623,7 @@ body{
 }
 
 #OurImpactPageSection4PictureSliderContainer{
+    position: relative;
     border-radius: 25px;
     width: 60%;
     aspect-ratio: 10/6;
@@ -638,9 +641,9 @@ body{
 }
 
 #OurImpactPageSection4PictureSliderLeftButton{
-    position: relative;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
-    top: -50%;
     left: 2.5%;
     width: 5%;
     aspect-ratio: 1/1;
@@ -659,9 +662,9 @@ body{
 }
 
 #OurImpactPageSection4PictureSliderRightButton{
-    position: relative;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
-    top: -50%;
     left: 85%;
     width: 5%;
     aspect-ratio: 1/1;
@@ -719,6 +722,7 @@ body{
 
 #OurImpactPageSection5PictureSliderContainer{
     border-radius: 25px;
+    position: relative;
     width: 60%;
     aspect-ratio: 10/6;
     max-height: 60vh;
@@ -735,9 +739,9 @@ body{
 }
 
 #OurImpactPageSection5PictureSliderLeftButton{
-    position: relative;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
-    top: -50%;
     left: 2.5%;
     width: 5%;
     aspect-ratio: 1/1;
@@ -756,9 +760,9 @@ body{
 }
 
 #OurImpactPageSection5PictureSliderRightButton{
-    position: relative;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
-    top: -50%;
     left: 85%;
     width: 5%;
     aspect-ratio: 1/1;
