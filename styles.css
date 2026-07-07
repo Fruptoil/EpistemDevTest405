@@ -432,7 +432,6 @@ body{
     aspect-ratio: 10/6;
     max-height: 60vh;
     overflow: hidden;
-    align-items: center;
     margin: 25px;   
 }
 
