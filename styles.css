@@ -446,7 +446,7 @@ body{
 #OurImpactPageSection2PictureSliderLeftButton{
     position: relative;
     transform: translateY(-50%);
-    top: -100%;
+    top: -50%;
     left: 2.5%;
     width: 5%;
     aspect-ratio: 1/1;
@@ -467,7 +467,7 @@ body{
 #OurImpactPageSection2PictureSliderRightButton{
     position: relative;
     transform: translateY(-50%);
-    top: -100%;
+    top: -50%;
     left: 85%;
     width: 5%;
     aspect-ratio: 1/1;
