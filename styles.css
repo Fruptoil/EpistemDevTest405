@@ -445,7 +445,6 @@ body{
 
 #OurImpactPageSection2PictureSliderLeftButton{
     position: relative;
-    transform: translateY(-50%);
     top: -50%;
     left: 2.5%;
     width: 5%;
