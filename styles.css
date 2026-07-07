@@ -156,6 +156,7 @@ body{
     object-fit: cover;
     object-position: center center;
     padding: 5%;
+    max-width: 200%;
 }
 
 #HomePageGap1{
@@ -1090,6 +1091,10 @@ body{
     #JoinUsPageSection1JoinButton{
         width: 100%;
         aspect-ratio: 10/1;
+    }
+    
+    #ContactUsPageSection1TextBox{
+        width: 90%;
     }
 }
 
