@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epistem Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content">
+        <div id="header">
+            <img src="EpistemLogo.webp" alt="Epistem Learning Logo" id="logo">
+            <div id="nav">
+                <a onclick="navigateTo('home')" id="NavHomeButton" class="navButton">Home</a>
+                <a onclick="navigateTo('about')" id="NavAboutButton" class="navButton">About</a>
+                <a onclick="navigateTo('ourImpact')" id="NavOurImpactButton" class="navButton">Our Impact</a>
+                <a onclick="navigateTo('donation')" id="NavDonationButton" class="navButton">Donate</a>
+                <a onclick="navigateTo('joinUs')" id="NavJoinUsButton" class="navButton">Join Us</a>
+                <a onclick="navigateTo('contactUs')" id="NavContactUsButton" class="navButton">Contact Us</a>
+                <a onclick="openNavigationSideBar()" id="NavHamburgerButton">&#9776;</a>
+            </div>
+        </div>
+        <div id="HomePage" class="page">
+            <div id="HomePageSection1">
+                <div style="flex:1;"></div>
+                <img src="HomePageSection1.png" alt="A Life Long Love For STEM" id="HomePageSection1Image">
+                <div style="flex:1;"></div>
+            </div>
+            <div id="HomePageGap1">
+
+            </div>
+            <div id="HomePageSection2">
+                <div id="HomePageSection2Text">
+                    <h1 id="HomePageSection2Header">Making STEM Fun</h1>
+                    <p id="HomePageSection2Paragraph">EpiSTEM is a 501(c)(3) nonprofit organization that aims to cultivate a passion for the STEM (Science, Technology, Education, Math) fields among elementary school children. Our lab leaders go into elementary school classrooms and perform fun and interactive science labs with the students, aligning with the curriculum they are currently learning in class.</p>
+                    <a id="HomePageSection2LearnMoreButton" onclick="navigateTo('learnMore')">Learn More</a>
+                </div>
+                <div id="HomePageSection2PictureSlider">
+                    <p id="HomePageSection2PictureSliderLabel">Students in Mrs. Kendrick's class McAuliffe Elementary School engaging with interactive labs</p>
+                    <div id="HomePageSection2PictureSliderContainer">
+                        <img src="HomePageSection2ImageSliderPicture1.webp" alt="Students in Mrs. Kendrick's class McAuliffe Elementary School engaging with interactive labs" id="HomePageSection2PictureSliderImage">
+                        <button id="HomePageSection2PictureSliderLeftButton" onclick="HomePageSlider(-1)">&lt;</button>
+                        <button id="HomePageSection2PictureSliderRightButton" onclick="HomePageSlider(1)">&gt;</button>
+                    </div>
+                </div>
+                <div id="HomePageApplyGap">
+                    <div id="HomePageApplyGapText">
+                        <h2 id="HomePageApplyHeader">Our Lab Leaders</h2>
+                        <p id="HomePageApplyParagraph">Become a part of EpiSTEM today by applying to be a lab leader, someone who goes into classrooms and leads science labs with the students. This is currently only open to Kern County high school students.</p>
+                        <a id="HomePageApplyNowLink" onclick="navigateTo('joinUs')">Apply Now</a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div id="OurImpactPage" class="page">
+            <div id="OurImpactPageSection1">
+                <div id="OurImpactPageSection1ImgContainer">
+                    <img src="OurImpactPageSection1GroupPhoto.jpg" id="OurImpactPageSection1GroupPhoto" alt="Group Photo of EPISTEM volunteers">
+                </div>
+                <div id="OurImpactPageSection1TextContainer">
+                    <div id="OurImpactPageSection1TextBox">
+                        <h4 id="OurImpactPageSection1TextBoxLabel">Connecting the community to STEM.</h4>
+                        <h1 id="OurImpactPageSection1TextBoxTitle">Our Impact</h1>
+                        <p id="OurImpactPageSection1TextBoxParagraph">EpiSTEM constantly strives to maintain a positive impact and outreach within our communities that not only connects students, but teachers, administrators, and parents alike. We do this not only through our regular lab leading sessions with elementary school classes, but also through community events such as our STEM Night, and our summer school lab leading sessions.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="OurImpactPageSection2Label">
+                <div id="OurImpactPageSection2TextBox">
+                    <h3 id="OurImpactPageSection2LabelHeading">General Lab Leading</h3>
+                    <p id="OurImpactPageSection2LabelParagraph"><b>McAuliffe, Van Horn, Whitley, and Laurelglen Elementary Schools</b><br> Our greatest impact lies in our general lab leading sessions throughout the school year. Our talented team of officers and lab leaders lead hands-on, interactive science labs with classes of students, currently across 4 elementary schools. These sessions spark curiosity and foster a love for science, making STEM more accessible and exciting for young minds. By bringing engaging experiments directly into classrooms, we aim to inspire the next generation of innovators and problem solvers.</p>
+                </div>
+            </div>
+            <div id="OurImpactPageSection2PictureSlider">
+                <div id="OurImpactPageSection2PictureSliderContainer">
+                    <img src="OurImpactPageSection2ImageSliderPicture1.webp" alt="Students doing the Strawberry DNA Lab" id="OurImpactPageSection2PictureSliderImage">
+                    <button id="OurImpactPageSection2PictureSliderLeftButton" onclick="OurImpactPageSlider1(-1)">&lt;</button>
+                    <button id="OurImpactPageSection2PictureSliderRightButton" onclick="OurImpactPageSlider1(1)">&gt;</button>
+                </div>
+            </div>
+            
+            <div id="OurImpactPageSection3Label">
+                <div id="OurImpactPageSection3TextBox">
+                    <h3 id="OurImpactPageSection3LabelHeading">Our STEM Night</h3>
+                    <p id="OurImpactPageSection3LabelParagraph"><b>Christa McAuliffe Elementary School - April 25th, 2024</b><br>At Christa McAuliffe Elementary School on April 25th, we hosted our STEM Night: a showcase of 14 different science labs that are akin to those usually done during lab leading sessions in classrooms. Students, parents, teachers, and school administrators were all able to see what EpiSTEM does and how we carry out our goals of cultivating a love for STEM among students.</p>
+                </div>
+            </div>
+            
+            <div id="OurImpactPageSection3PictureSlider">
+                <div id="OurImpactPageSection3PictureSliderContainer">
+                    <img src="OurImpactPageSection3ImageSliderPicture1.webp" alt="STEM Night" id="OurImpactPageSection3PictureSliderImage">
+                    <button id="OurImpactPageSection3PictureSliderLeftButton" onclick="OurImpactPageSlider2(-1)">&lt;</button>
+                    <button id="OurImpactPageSection3PictureSliderRightButton" onclick="OurImpactPageSlider2(1)">&gt;</button>
+                </div>
+            </div>
+            
+            <div id="OurImpactPageSection4Label">
+                <div id="OurImpactPageSection4TextBox">
+                    <h3 id="OurImpactPageSection4LabelHeading">Summer School Lab Leading</h3>
+                    <p id="OurImpactPageSection4LabelParagraph"><b>Christa McAuliffe Elementary School</b><br>We were given the wonderful opportunity of leading labs during 3rd and 4th grade summer school at Christa McAuliffe Elementary. Our lab leaders and officers gave the students an early, hands-on look at the science curriculum that they would be studying during the upcoming school year.</p>
+                </div>
+            </div>
+            
+            <div id="OurImpactPageSection4PictureSlider">
+                <div id="OurImpactPageSection4PictureSliderContainer">
+                    <img src="OurImpactPageSection4ImageSliderPicture1.webp" alt="Summer School" id="OurImpactPageSection4PictureSliderImage">
+                    <button id="OurImpactPageSection4PictureSliderLeftButton" onclick="OurImpactPageSlider3(-1)">&lt;</button>
+                    <button id="OurImpactPageSection4PictureSliderRightButton" onclick="OurImpactPageSlider3(1)">&gt;</button>
+                </div>
+            </div>
+            
+            <div id="OurImpactPageSection5Label">
+                <div id="OurImpactPageSection5TextBox">
+                    <h3 id="OurImpactPageSection5LabelHeading">November STEAM Day</h3>
+                    <p id="OurImpactPageSection5LabelParagraph"><b>Christa McAuliffe Elementary School - November 1st, 2024</b><br>On the morning of, November 1, 2024 at McAuliffe Elementary School, our wonderful officers hosted a STEAM day for the students, complete with Halloween inspired science labs. The students explored exciting hands-on activities, from dancing raisins to mummy's magic milk. It was a memorable morning filled with a touch of Halloween magic!</p>
+                </div>
+            </div>
+            
+            <div id="OurImpactPageSection5PictureSlider">
+                <div id="OurImpactPageSection5PictureSliderContainer">
+                    <img src="OurImpactPageSection5ImageSliderPicture1.webp" alt="Steam Day" id="OurImpactPageSection5PictureSliderImage">
+                    <button id="OurImpactPageSection5PictureSliderLeftButton" onclick="OurImpactPageSlider4(-1)">&lt;</button>
+                    <button id="OurImpactPageSection5PictureSliderRightButton" onclick="OurImpactPageSlider4(1)">&gt;</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="DonationPage" class="page">
+            <div id="DonationPageSection1">
+                <div style="flex: 1;"></div>
+                <div id="DonationPageSection1Box">
+                    <h1 id="DonationPageSection1Heading">Every donation counts.</h1>
+                    <p id="DonationPageSection1Paragraph">EpiSTEM is a 501(c)(3) organization. Your donation will directly go towards organizational costs and the costs of science labs. Your donation could be the reason a young student develops a passion for STEM! You can donate below or to our GoFundMe, linked below. We are also happy to provide any necessary receipts for tax purposes, if requested.</p>
+                    <button id="DonationPageSection1GoFundMeButton" onclick="OpenGoFundMeLink()">Our GoFundMe</button>
+                </div>
+                <div style="flex: 1;"></div>
+            </div>
+        </div>
+
+        <div id="JoinUsPage" class="page">
+            <div id="JoinUsPageSection1">
+                <img src="HomePageSection2ImageSliderPicture3.webp" alt="Students in Mrs. Kendrick's class McAuliffe Elementary School engaging with interactive labs" id="JoinUsPageSection1Image">
+                <div id="JoinUsPageSection1TextBox">
+                    <div id="JoinUsPageSection1TextContainer">
+                        <h5 id="JoinUsPageSection1Disclaimer">CURRENTLY OPEN TO KERN COUNTY HIGH SCHOOL STUDENTS ONLY</h5>
+                        <h1 id="JoinUsPageSection1Heading">Interested in becoming a Lab Leader?</h1>
+                        <p id="JoinUsPageSection1Paragraph"> Lab leaders are some of our most important members of our team; they are the ones that actually go into classrooms and lead labs with students. We are looking for individuals that are passionate about STEM, have the ability to lead and work with children, and those who would represent our mission and values well. This is currently open only to high school students in Kern County, California.</p>
+                        <button id="JoinUsPageSection1JoinButton" onclick="OpenApplicationLink()">Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ContactUsPage" class="page">
+            <div id="ContactUsPageSection1">
+                <div id="ContactUsPageSection1TextBox">
+                    <h2 id="ContactUsPageSection1Heading">Contact Information</h2>
+                    <h4 id="ContactUsPageEmailText">Email:<br> epistem.edu.learning@gmail.com</h4>
+                    <h4 id="ContactUsPagePhoneText">Phone:<br> 925-307-0338</h4>
+                    <h4 id="ContactUsPageInstagramText">Instagram:<br> @epistem_learning</h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <img src="EpistemLogo.webp" alt="Epistem Learning Logo" id="footerLogo">
+            <div id="footerButtons">
+                <div id="footerNavBar">
+                    <a onclick="navigateTo('home')" id="NavHomeButtonFooter">Home</a>
+                    <a onclick="navigateTo('about')" id="NavAboutButtonFooter">About</a>
+                    <a onclick="navigateTo('ourImpact')" id="NavOurImpactButtonFooter">Our Impact</a>
+                    <a onclick="navigateTo('donation')" id="NavDonationButtonFooter">Donate</a>
+                    <a onclick="navigateTo('joinUs')" id="NavJoinUsButtonFooter">Join Us</a>
+                    <a onclick="navigateTo('contactUs')" id="NavContactUsButtonFooter">Contact Us</a>
+                </div>
+                <div id="footerContactButtons">
+                    <a href="mailto:epistemlearning@gmail.com" id="imgButtonEmailFooter">
+                        <img id="FooterEmailButton" src="EmailIcon.png" alt="Email">
+                    </a>
+                    <a href="www.instagram.com/epistem_learning" id="imgButtonEmailFooter">
+                        <img id="FooterEmailButton" src="InstaIcon.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="navSidebar">
+        <div id="navSidebarButtons">
+            <a onclick="closeNavigationSideBar()" id="SidebarNavCloseButton">&times;</a>
+            <a onclick="navigateTo('home')" id="SidebarNavHomeButton" class="navSidebarButton">Home</a>
+            <a onclick="navigateTo('about')" id="SidebarNavAboutButton" class="navSidebarButton">About</a>
+            <a onclick="navigateTo('ourImpact')" id="SidebarNavOurImpactButton" class="navSidebarButton">Our Impact</a>
+            <a onclick="navigateTo('donation')" id="SidebarNavDonationButton" class="navSidebarButton">Donate</a>
+            <a onclick="navigateTo('joinUs')" id="SidebarNavJoinUsButton" class="navSidebarButton">Join Us</a>
+            <a onclick="navigateTo('contactUs')" id="SidebarNavContactUsButton" class="navSidebarButton">Contact Us</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
